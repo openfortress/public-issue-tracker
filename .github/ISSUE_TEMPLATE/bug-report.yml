@@ -55,11 +55,10 @@ body:
       render: bash
     validations:
       required: true
-  - type: checkboxes
+  - type: dropdown
     id: operating-systems
     attributes:
       label: Which operating systems have you used?
-      description: You may select more than one.
       options:
         - label: Windows
         - label: Linux
