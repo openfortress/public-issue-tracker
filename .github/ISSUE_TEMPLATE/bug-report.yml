@@ -32,6 +32,17 @@ body:
     validations:
       required: true
   - type: textarea
+    id: server
+    attributes:
+      label: What server did this occur on?
+      description: 'Please specify the server name, or if it was a local server.'
+      placeholder: >-
+        Official Server or Community hosted. If Community, please specify the
+        name.
+      value: Deathmatch - Official Openfortress.fun Dedicated Server
+    validations:
+      required: true
+  - type: textarea
     id: repro
     attributes:
       label: Reproduction steps
@@ -50,7 +61,6 @@ body:
       label: Which operating systems have you used?
       description: You may select more than one.
       options:
-        - label: macOS
         - label: Windows
         - label: Linux
     validations:
@@ -71,17 +81,6 @@ body:
         Please copy and paste any relevant log output. This will be
         automatically formatted into code, so no need for backticks.
       render: shell
-  - type: textarea
-    id: server
-    attributes:
-      label: What server did this occur on?
-      description: 'Please specify the server name, or if it was a local server.'
-      placeholder: >-
-        Official Server or Community hosted. If Community, please specify the
-        name.
-      value: Deathmatch - Official Openfortress.fun Dedicated Server
-    validations:
-      required: true
   - type: textarea
     id: anything-else
     attributes:
