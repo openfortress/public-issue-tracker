@@ -1,0 +1,91 @@
+name: Bug Report
+description: Create a report to help us fix any issues for Open Fortress
+title: '[Bug]: '
+labels:
+  - bug
+  - triage
+assignees: ''
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Describe the bug.
+      description: 'Also tell us, what did you expect to happen?'
+      placeholder: Tell us what you see!
+      value: A bug happened!
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: What revision are you currently playing on?
+      options:
+        - rev13
+        - rev14
+        - rev15
+        - rev16
+        - rev17
+        - rev18
+        - rev19
+        - rev20
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction steps
+      description: How do you trigger this bug? Please walk us through it step by step.
+      value: |
+        1.
+        2.
+        3.
+        ...
+      render: bash
+    validations:
+      required: true
+  - type: checkboxes
+    id: operating-systems
+    attributes:
+      label: Which operating systems have you used?
+      description: You may select more than one.
+      options:
+        - label: macOS
+        - label: Windows
+        - label: Linux
+    validations:
+      required: true
+  - type: textarea
+    id: expected-output
+    attributes:
+      label: Expected behavior
+      description: A clear and concise description of what you expected to happen.
+      placeholder: Tell us what the expected output is.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: >-
+        Please copy and paste any relevant log output. This will be
+        automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: textarea
+    id: server
+    attributes:
+      label: What server did this occur on?
+      description: 'Please specify the server name, or if it was a local server.'
+      placeholder: >-
+        Official Server or Community hosted. If Community, please specify the
+        name.
+      value: Deathmatch - Official Openfortress.fun Dedicated Server
+    validations:
+      required: true
+  - type: textarea
+    id: anything-else
+    attributes:
+      label: Additional context
+      description: >-
+        Add any other context about the problem here. Include screenshots if
+        necessary.
