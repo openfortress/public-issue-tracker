@@ -12,7 +12,7 @@ body:
       label: Describe the bug.
       description: 'Also tell us, what did you expect to happen?'
       placeholder: Tell us what you see!
-      value: A bug happened!
+      value: A bug happened!\nIf this is a fresh install of the game, please verify your files before making a bug report.\nAlso if you made any custom configurations/added mods please remove them and attempt to recreate the bug again.
     validations:
       required: true
   - type: dropdown
