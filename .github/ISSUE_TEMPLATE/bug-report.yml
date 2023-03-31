@@ -4,7 +4,6 @@ title: '[Bug]: '
 labels:
   - bug
   - triage
-assignees: 'brysondev'
 body:
   - type: textarea
     id: what-happened
