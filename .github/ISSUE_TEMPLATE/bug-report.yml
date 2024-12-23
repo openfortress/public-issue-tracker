@@ -19,6 +19,7 @@ body:
     attributes:
       label: Version
       description: What revision are you currently playing on?
+      default: 8
       options:
         - rev13
         - rev14
@@ -28,6 +29,7 @@ body:
         - rev18
         - rev19
         - rev20
+        - rev21
     validations:
       required: true
   - type: textarea
